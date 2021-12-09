@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 百度首页左上角导航栏 */
+.head{
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    padding-left: 24px;
+    height: 58px;
+    font-size: 16px;
+}
+.hd{
+    font-size: 12px;
+    margin-right: 22px;
+    margin-top: 6px;
+    display: inline-block;
+    position: relative;
+    /* cursor: pointer; */
+    /* background-color: #f40; */
+    /* color: dodgerblue; */
+}
+ a:hover{
+
+    /* background: blue; */
+    color: blue;
+    /* background-color: dodgerblue; */
+}
+
+/* 首页右上侧导航栏 */
+.left{
+    /* float: left;
+    left: 20px; */
+    position: relative;
+    left: 1250px;
+    font-size: 12px;
+    padding: 16px;
+    height: 58px;
+    margin-top: 7px;
+    /* margin-right:25px ; */
+    /* padding-left: 5px; */
+    /* margin-left: 7px; */
+}
+.login{
+    position: relative;
+    right: 5px;
+    left: 5px;
+    margin-left: 8px;
+    font-size: 13px;
+    background-color: blue;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* 中间图片部分 */
+img{
+    width: 300px;
+    position: relative;
+    left: 40%;
+    /* top: 40px; */
+}
+
+#pd{
+    position: relative;
+    /* right: 50%; */
+    left: 15%;
+    top: 80px;
+    margin-left: 20px; 
+    width: 300px;
+    height: 300px;
+    /* padding: 100px; */
+    /* margin: 100px; */
+
+
+}
+#pd .search{
+    width: 350px;
+    height: 30px;
+    border-radius: 10px;
+}
+#pd .bd{
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: blue;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-right: 20px;
+    margin: -10px;
+
+}
+
