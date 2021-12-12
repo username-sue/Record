@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 首页导航栏 */
+.header{
+    height: 35px;
+    font-size: 12px;
+    padding-top: 15px;
+}
+.header a{
+    margin: 5px;
+}
+
+/* 广告图片引入 */
+.headAD{
+    /* width: 500px; */
+    height: 80px;
+    background-color: #f50;
+}
+.headAD ul{
+    margin-left: 3px;
+}
+.headAD ul li{
+    float: left;
+    width: 200px;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 15px;
+    padding: 3px 15px 10px 1px;
+}
+.headAD .images{
+    width: 50px;
+    height: 50px;
+    border-radius: 7px;
+    position: absolute;
+    top: 15px;
+    left: 145px;
+}
+.headAD li a{
+    color: #fff;
+}
+.headAD li h3{
+    position: absolute;
+    top: 19px;
+    left: 27px;
+    font-size: 20px; 
+}
+.headAD li p{
+    position: absolute;
+    top: 42px;
+    left: 23px;
+    font-size: 14px;
+    
+}
