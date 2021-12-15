@@ -54,3 +54,287 @@
     font-size: 14px;
     
 }
+
+/* 中间搜索框 */
+.middle{
+    /* height: 200px;
+    line-height: 21px; */
+    font-size: 12px;
+    background-color: #fff;
+}
+.middle .logo{
+    width: 350px;
+    height: 55px;
+    line-height: 92px;
+    margin-top: 10px;
+    /* margin-right: 10px; */
+    /* padding-right: 20px; */
+
+}
+.search{
+    position: relative;
+    width: 572px;
+    height: 50px;
+    /* padding: 10px; */
+    text-align: center;
+}
+
+.dt{
+    position: absolute;
+   left: 300px;
+    width: 550px;
+    /* padding-right: 180px; */
+    line-height: 38px;
+    border-radius: 20px;
+    color: #f50;
+}
+
+.dd{
+    position: absolute;
+    left: 768px;
+    top: 32px;
+    line-height: 26px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: #f50;
+    color: #fff;
+}
+.hot{
+    line-height: 40px;
+    width: 1147px;
+    float: left;
+}
+.hot ul li{
+    display: inline-block;
+
+}
+.hot ul li a:hover{
+color: #f50;
+}
+
+.code{
+   margin-top: -90px;
+  margin-right: 90px;
+  border: 1px solid gainsboro;
+  padding: 5px;
+}
+.code p{
+    text-align: center;
+    color: #f50;
+    
+}
+.code img{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+/*  下导航栏 */
+.nav{
+    background-color: #fff;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    color: #000;
+}
+.nav h2{
+    /* margin-left: 30px;
+    color: #f50; */
+    float: left;
+    width: 190px;
+    text-align: center;
+    font-size: 16px;
+    color: #FF6200;
+    margin-right: 52px;
+
+}
+.nav ul li{
+    float: left;
+    line-height: 30px;
+    margin: 0 7px;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+}
+.nav ul li a:hover{
+    color: #f50;
+}
+
+/* 下左侧导航栏/中间图片广告 */
+.outer{
+    background-color: #fff;
+    height: 522px;
+    
+}
+.main{
+    position:relative;
+    float: left;
+    width: 773px;
+    height: 100%;
+    clear: left;
+    background-color: #fff;
+}
+/* 左侧导航栏 */
+.nav-A{
+    height: 526px;
+    position: relative;
+    font-size: 15px;
+    color: #fff;
+    width: 212px;
+    margin-left: 40px;
+    /* line-height: 20px; */
+   
+}
+.nav-A ul li{
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    width: 212px;
+    color: #666;
+}
+.nav-A ul li a{
+    margin-left: 7px;
+}
+.nav-A ul li a:hover{
+    color: #f50;
+}
+
+
+/* 中间广告 /第一块*/
+.code-A{
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    margin-left: 22px;
+    margin-top: 10px;
+    float: left;
+    height: 512px;
+    width: 520px;
+    border-radius: 7px;
+    /* border: 1px solid gainsboro; */
+}
+.code-A .code-imager{
+    position: relative;
+    width: 520px;
+    height: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* 图片第二块 */
+.two-imager{
+    position: relative;
+    width: 520px;
+    height: 230px;
+    margin-top: 1px;
+    overflow: hidden;
+}
+.two-size{
+    height: 24px;
+    font-size: 14px;
+    padding-top: 6px;
+    position: relative;
+}
+.text{
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+}
+/* 图片第三块 */
+.three{
+    position: relative;
+    width: 520px;
+    height: 201px;
+    margin-top: 6px;
+    width: 251px;
+    height: 190px;
+    /* overflow: hidden; */
+    margin-left: 6px;
+
+    /* background-color: gray; */
+}
+.three span{
+    position: absolute;
+    top: -6px;
+    right: 269px;
+    margin-top: 6px;
+    width: 251px;
+    height: 190px;
+}
+
+.three  img{
+    top: -209px;
+    left: 493px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+
+/* 右侧 */
+.righter{
+    float: right;
+    width: 384px;
+    height: 508px;
+    border-radius: 12px;
+    margin-right: 18px;
+    margin-top: 10px;
+    background-color: #F3F3F3;
+}
+.hallo{
+    margin-top: 20px;
+    text-align: center;
+    line-height: 36px;
+    height: 20px;
+}
+.hallo img{
+    border-radius: 25px;
+}
+.hallo span{
+    background-color: #f50;
+    padding: 2px;
+    border-radius: 5px;
+    padding: 8px 36px 8px 48px;
+    font-size: 15px;
+}
+.hallo span a{
+    color: #fff;
+}
+/* 左侧图片 */
+.right-images{
+    margin-top: 114px;
+    width: 356px;
+    height: 141px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-left: 14px;
+    position: relative;
+}
+
+/* 公告 */
+.right-size{
+    margin-top: 20px;
+    padding-left: 16px;
+    line-height: 25px;
+}
+.right-size p i{
+    padding: 0px 13px 0 13px;
+}
+
+.right-bottom{
+    margin-top: 20px;
+    padding-left: 16px;
+    line-height: 25px;
+    font-size: 14px;
+    margin: 51px 28px 10px 12px;
+    text-align: center;
+}
+.right-bottom span a{
+    /* padding: 10px; */
+    padding: 0px 0px 0px 10px;
+}
