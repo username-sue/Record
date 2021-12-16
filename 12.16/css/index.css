@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 百度导航 */
+.nav{
+    z-index: 99;
+    min-width: 1000px;
+    width: 100%;
+    border-bottom: 0;
+    height: 60px;
+    background: #fff;
+    margin-top: 27px;
+    font-size: 13px;
+    font-weight: 500;
+}
+/* 左侧 */
+.nav-left{
+    margin-left: 20px;
+}
+.nav-left a{
+    padding: 10px;
+}
+/* 右侧 */
+.nav-right{
+    margin-right: 20px;
+}
+.nav-right a{
+    padding: 5px 18px 5px 18px;
+}
+.nav-size{
+    background-color: blue;
+    color: #fff;
+    border-radius: 7px;
+}
+
+/* 中间部分 */
+.middle{
+    position: relative;
+    height: 40%;
+    min-height: 314px;
+    max-height: 510px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.middle-two{
+    width: 654px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: left;
+    z-index: 100;
+}
+.middle-two img{
+    height: 40%;
+    position: absolute;
+    left: 50%;
+    margin-left: -135px;
+}
+/* 搜索框 */
+.search{
+    width: 546px;
+   position: relative;
+}
+.search p{
+    position: absolute;
+    left: 23px;
+    top: 136px;
+    width: 300px;
+}
+.border{
+    width: 500px;
+    border-radius: 7px 2px 2px 7px;
+    line-height: 35.5px;
+}
+.border-bd{
+    width: 85px;
+    border-radius: 0px 7px 7px 0px;
+    height: 40px;
+    position: absolute;
+    left: 503px;
+    top: -1px;
+    background-color: #4662d9;
+    border: none;
+}
+.middle-font{
+    margin-top: 80px;
+}
+.middle-font a{
+    margin: 0px -294px 0px 0px;
+}
+.bottom{
+    position: relative;
+    position: absolute;
+    top: 245px;
+    line-height: 35px;
+}
+.bottom-right{
+    margin-left: 64px;
+}
