@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 头/导航栏 */
+.header{
+    position: relative;
+    z-index: 30;
+    height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    background: #333;
+}
+.header-b{
+    margin: 0px 140px 0px 124px;
+}
+.header-c{
+    margin: 0px 179px 0px 10px;
+}
+.header a{
+    color: #b0b0b0;
+    /* color: #fff; */
+    line-height: 37px;
+    margin: 0px 10px 0px 5px;
+}
+/* logo */
+.header-site{
+    position: relative;
+    z-index: 20;
+    height: 100px;
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+    margin: 26px 176px 0px -3px;
+}
+.nav span a{
+    margin: 10px;
+    line-height: 110px;
+    height: 20px;
+    font-size: 16px;
+}
+.search{
+    margin-top: -81px;
+}
+.search-A{
+    width: 200px;
+    height: 43px;
+    border: 1px solid #e0e0e0;
+    /* vertical-align: bottom; */
+    vertical-align: top;
+}
+.search-B{
+    width: 67px;
+    height: 45px;
+    margin-left: -8px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    vertical-align: bottom;
+}
+
+/* <!-- 中间 导航栏/tup --> */
+.code{
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    z-index: 10;
+    height: 460px;
+    overflow: hidden;
+}
+.left{
+    position: absolute;
+    top: -6px;
+    z-index: 21;
+    width: 234px;
+    height: 460px;
+    font-size: 14px;
+}
+.left-A{
+    height: 471px;
+    background: rgba(105,101,101,.6);
+   
+}
+.left-A li{
+    margin-top: 7px;
+}
+.left-A a{
+    margin: 0px 0px 0px 40px;
+    line-height: 38px;
+}
+
+
+
