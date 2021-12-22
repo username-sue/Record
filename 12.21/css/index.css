@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* 头部/导航栏 */
+.heard{
+    height: 30px;
+    line-height: 30px;
+}
+
+.right li{
+    display: initial;
+    margin: 0px 17px 0px 10px;
+    
+}
+
+/* 中间搜索框 */
+#header-code{
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.search{
+    height: 140px;
+    position: relative;
+}
+/* logo */
+.logo{
+    z-index: 2;
+    left: 0;
+    top: 10px;
+    width: 190px;
+    height: 120px;
+    
+}
+
+/* 中间搜索款 */
+.code{
+    position: absolute;
+    left: 260px;
+    top: 25px;
+    width: 546px;
+    height: 32px;
+    border: 2px solid #e2231a;
+    background: #fff;
+}
+.code-but{
+    position: absolute;
+    right: -2px;
+    border-radius: 0;
+    width: 58px;
+    height: 33px;
+    line-height: 33px;
+    border: none;
+    background-color: #e1251b;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.size{
+    display: block;
+    margin-top: 40px;
+}
+.size a{
+    margin: 0px 11px 0px -5px;
+}
+.size a:hover{
+    color: #f40;
+}
+
+.font{
+    margin: 16px -5px 0px -81px;
+    font-size: 17px;
+}
+.font span a:hover{
+   color: #f40;
+}
+/* <!-- 右侧图片 --> */
+.right-img{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    width: 190px;
+    height: 120px;
+    
+
+}
+.right-img img{
+    position: relative;
+    display: block;
+    width: 190px;
+    height: 120px;
+    z-index: 3;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
