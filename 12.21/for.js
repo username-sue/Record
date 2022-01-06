@@ -44,11 +44,37 @@
     // document.write(mul);
 
         //阶乘递归式写法
-    function mul(n){
-        if(n == 1){
-            return 1;
-        }
-        return n*mul(n - 1);
-    }
-  console.log( mul(5));
+//     function mul(n){
+//         if(n == 1){
+//             return 1;
+//         }
+//         return n*mul(n - 1);
+//     }
+//   console.log( mul(5));
 
+
+
+    //2021/12/28
+    //switch case
+    //问题一，当找到满足的条件式他会连带着它后面的结果执行出来，
+    //这时候就使用break终止循环
+    // var n = 2;
+    // switch(n){
+    //     //switch 里面放的是条件
+    //     case(1):
+    //     console.log('a');
+    //     case(2):
+    //     console.log('b');//问题1，连C的结果也打印出来了
+    //     break;//解决，作用：终止循环
+    //     case(3):
+    //     console.log('c');
+    // }
+
+
+    // var arr = [2,5,8,0,100];
+    // for(var i = 0; i < arr.length; i++){
+    //     // console.log(arr[i]);
+    //     if(i == 3){
+    //         console.log(arr[i - 1]);
+    //     }
+    // }

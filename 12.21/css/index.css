@@ -33,7 +33,7 @@
     top: 10px;
     width: 190px;
     height: 120px;
-    
+    overflow: hidden;
 }
 
 /* 中间搜索款 */
@@ -95,4 +95,146 @@
     z-index: 3;
     background-repeat: no-repeat;
     background-position: bottom;
+}
+
+
+
+
+/* 中间广告 */
+.middle{
+    z-index: 1;
+    height: 480px;
+    background-color: #f4f4f4;
+    margin-top: 10px;
+}
+/* <!-- 左侧导航 --> */
+.left{
+    margin-top: 15px;
+    width: 190px;
+    height: 480px;
+    margin-right: 10px;
+    background-color: #fefefe;
+    /* background-color: darkgrey; */
+}
+.left-nav{
+    font-size: 16px;
+    overflow: hidden;
+    padding: 10px 0;
+    color: #636363;
+    margin: 6px 20px 6px 15px;
+    line-height: 29px;
+}
+
+/* 中间图片部分 */
+.middle-img{
+    margin-top: 15px;
+    width: 590px;
+    height: 470px;
+    margin-right: 10px;
+    float: left;
+    overflow: hidden;
+    background-color: cornsilk;
+}
+.middle-img img{
+    width: 100%;
+    height: 100%;
+}
+/* 右侧图片 */
+.image-right{
+    margin-top: 15px;
+    height:470px;
+    width: 190px;
+    vertical-align: top;
+    display: inline-block;
+    height: 100%;
+    /* background-color: gainsboro; */
+}
+.image-right p img{
+    width: 190px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+/* 右侧登录框 */
+.login{
+    margin-top: 15px;
+    position: relative;
+    float: right;
+    width: 190px;
+    height: 480px;
+    z-index: 1;
+    background: #fff;
+    /* background-color: lightgrey; */
+}
+.one{
+    height: 102px;
+    /* margin-top: 10px; */
+    overflow: hidden;
+    color: #636363;
+
+}
+.one img{
+    margin: 20px 0px 0px 26px;
+    display: block;
+    width: 40px;
+    border-radius: 20px;
+    height: 40px;
+}
+.one span{
+    position: absolute;
+    left: 73px;
+    top: 22px;
+}
+.one span p {
+    margin-top: 2px;
+}
+.one-size{    
+    margin: 18px 0px 0px 32px;
+    
+}
+.one-size span{
+    margin: 51px 0px 0px -48px;
+    padding: 5px 12px 5px 12px;
+    border-radius: 14px;
+    color: #f4f4f4;
+    background-color: #c81623;
+}
+.one-size a{
+    margin: 44px 0px 0px 70px;
+    padding: 7px 12px 7px 12px;
+    border-radius: 14px;
+    color: #f4f4f4;
+    background-color: #363634;
+}
+
+.two{
+    overflow: hidden;
+    height: 130px;
+}
+.two p{
+    margin-top: 10px;
+}
+.two ul{
+    margin: 35px 0px 0px 5px;
+}
+.two ul li a{
+    line-height: 20px;
+    padding: 1px 10px 1px 10px;
+    background-color: rgba(225,37,27,.08);
+}
+.three{
+    overflow: hidden;
+    position: relative;
+    height: 238px;
+}
+
+.three-size{
+    line-height: 55px;
+    height: 55px;
+    background: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+.three-size a{
+    padding: 10px 13px 10px 13px;
 }
