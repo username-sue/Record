@@ -264,6 +264,37 @@
 //hasOwnProperty的作用：就是用来判断属性是不是自身的方法
 //instanceof是判断 A对象是不是 B构造函数构造出来的
 //for in 通过属性来控制循环圈数
+                    // var obj ={
+                    //     name:'zhan',
+                    //     age:18,
+                    //     sex:'male',
+                    //     hegiht:180,
+                    //     arr:['zzz','ddd',[1,2]],
+                    // }
+
+                    // var obj1 = {};
+                    // function clone(Origin,Target){
+                    //     for(var prop in Origin){ //先遍历一遍OBj里面的属性
+                    //         if(Origin.hasOwnProperty(prop)){//让后判断OBJ里面的属性是否是自身的
+                    //             if(typeof(Origin[prop]) == 'object'){//判断是不是引用值
+                    //                 if(Origin[prop] instanceof Array){ //判断OBJ里面的属性是不是数字类型
+                    //                     Target[prop] = []; //如是的话就在OBJ1里面创建一个新的数组 ；
+                    //                 }else{
+                    //                     Target[prop] = {};
+                    //                 }
+                    //                 clone(Origin[prop],Target[prop]);
+                    //             }else{
+                    //                 Target[prop] = Origin[prop]; //最后一步是让OBJ身上的属性继承OBJ1
+                    //             }
+                              
+
+                    //         }
+                    //     }
+                    // }
+                    // clone(obj,obj1);
+
+//列2
+
                     var obj ={
                         name:'zhan',
                         age:18,
@@ -272,23 +303,26 @@
                         arr:['zzz','ddd',[1,2]],
                     }
 
-                    var obj1 = {};
-                    function clone(Origin,Target){
-                        for(var prop in Origin){ //先遍历一遍OBj里面的属性
-                            if(Origin.hasOwnProperty(prop)){//让后判断OBJ里面的属性是否是自身的
-                                if(typeof(Origin[prop]) == 'object'){//判断是不是引用值
-                                    if(Origin[prop] instanceof Array){ //判断OBJ里面的属性是不是数字类型
-                                        Target[prop] = []; //如是的话就在OBJ1里面创建一个新的数组；
-                                    }else{
-                                        Target[prop] = {};//如果不是的话就在obj1里面创建一个新的对象
-                                    }
-                                    clone(Origin[prop],Target[prop]);
+                    var obj1 = {
+                        name:'zhan',
+                        age:18,
+                        sex:'male',
+                        hegiht:180,
+                        arr:['zzz','ddd',[1,2]],
+                    };
+                    function colne(Origin,Target){
+                        for(var prop in Origin){//先遍历一遍对象
+                            if(Origin.hasOwnProperty(prop)){ //判断它是不是自身的属性
+                                if(typeof(Origin[prop]) == 'object'){ //判断它obj里面的属性是不是引用值
+                                    Target[prop] = Origin[prop] == Array ? []:{};
+                                    colne (Origin[prop],Target[prop]);
                                 }else{
-                                    Target[prop] = Origin[prop]; //最后一步是让OBJ身上的属性继承OBJ1
+                                    Target[prop] = Origin[prop];
                                 }
-                              
-
+                               
                             }
+
                         }
+                        return Target;
                     }
-                    clone(obj,obj1);
+                    colne(obj,obj1);

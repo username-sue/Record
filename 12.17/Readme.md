@@ -10,7 +10,7 @@ git commit -m '...'
 // 本地仓库的内容提交到远程仓库
 git push origin master
 ```
-co
+cogit
 # 12.10
 ## 所遇到的问题集合
 <!-- 
