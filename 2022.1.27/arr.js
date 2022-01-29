@@ -147,19 +147,20 @@
 //数组去重，在原型链上编程
 //列
                 // var  arr = [1,2,1,1,2,2,3,3,5,5,4,4];
-                // Array.prototype.unique = function(){
-                //     //由于对象不能有重复的属性名，基于这一特点来去重
-                //     var obj = {};//定义一个空对象，把arr数组的值当做对象得属性名填到obj里面去
-                //     var arr = [];//由于原来定义的arr数组，不可改变原数组，所以这里定义了一个新数组，把去重后的值扔到新数组里面去。
-                //     var len = this.length;//看数组的每一位
-                //     for(var i = 0; i < len; i++){//循环看数组的每一位值
-                //         if(!obj[this[i]]){// 取反，看数组obj里面的属性是否为unfindent
-                //             obj[this[i]] = 'abc';//给obj里面随便加一个属性值，为了好区分
-                //             arr.push(this[i]); //最后把去重后的结果扔到新定义的数组里面去
-                //         }
-                //     }
-                //     return arr;
-                // }
+                 var arr = ['a','a','v','d','c','d','v'];
+                Array.prototype.unique = function(){
+                    //由于对象不能有重复的属性名，基于这一特点来去重
+                    var obj = {};//定义一个空对象，把arr数组的值当做对象得属性名填到obj里面去
+                    var arr = [];//由于原来定义的arr数组，不可改变原数组，所以这里定义了一个新数组，把去重后的值扔到新数组里面去。
+                    var len = this.length;//看数组的每一位
+                    for(var i = 0; i < len; i++){//循环看数组的每一位值
+                        if(!obj[this[i]]){// 取反，看数组obj里面的属性是否为unfindent
+                            obj[this[i]] = 'abc';//给obj里面随便加一个属性值，为了好区分
+                            arr.push(this[i]); //最后把去重后的结果扔到新定义的数组里面去
+                        }
+                    }
+                    return arr;
+                }
 
 
 
@@ -167,27 +168,45 @@
 //原始值，引用值
 //call，借用别人的方法实现自己的功能
 //列
-                    function type( Target){
-                        var obj ={
-                            "[object Array]":'array',
-                            "[object Object]":'object',
-                            "[object Number]":'number - object',
-                            "[object Boolean]":'boolen - object',
-                            "[object String]":'string - object'
-                        }
-                        //判断Target是不是等于null,如果是就返回null
-                        if(Target === null){//错误一这里少写了一个等号
-                            return 'null';
-                        }
-                        //判断Target是不是等于function,如果是返回function
-                        if(Target == 'function'){
-                            return 'function';
-                        }else if(typeof(Target) == "object"){
-                            //调用对象原型里面的toString方法来进行判断
-                            var str = Object.prototype.toString.call(Target);
-                            return obj[str];
-                        }else{
-                            return typeof(Target);
-                        }
+                    // function type( Target){
+                    //     var obj ={
+                    //         "[object Array]":'array',
+                    //         "[object Object]":'object',
+                    //         "[object Number]":'number - object',
+                    //         "[object Boolean]":'boolen - object',
+                    //         "[object String]":'string - object'
+                    //     }
+                    //     //判断Target是不是等于null,如果是就返回null
+                    //     if(Target === null){//错误一这里少写了一个等号
+                    //         return 'null';
+                    //     }
+                    //     //判断Target是不是等于function,如果是返回function
+                    //     if(Target == 'function'){
+                    //         return 'function';
+                    //     }else if(typeof(Target) == "object"){
+                    //         //调用对象原型里面的toString方法来进行判断
+                    //         var str = Object.prototype.toString.call(Target);
+                    //         return obj[str];
+                    //     }else{
+                    //         return typeof(Target);
+                    //     }
                        
-                    }
+                    // }
+
+
+
+//字符串去重
+                    // var str = ['a','a','v','d','c','d','v'];
+                    // function unique(){
+                    //     var obj = {};
+                    //     var str = [];
+                    //     var len = this.length;
+                    //     for(var i = 0; i < len; i++){
+                    //         if(!obj[this[i]]){
+                    //             obj[this[i]] = '1';
+                    //             str.push(this[i]);
+                    //         }
+                    //     }
+                    //     return str;
+                    // }
+                    // var num = str.unique();
