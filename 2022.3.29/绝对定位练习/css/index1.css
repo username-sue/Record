@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    width: 100%;
+}
+.middle{
+    /* 可视区窗口定位 */
+    position: fixed;
+    background:rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /* 设置元素的堆叠顺序，仅设置定位图像时有用 */
+    z-index: 5px;
+}
+.logo{
+    /* 绝对定位 */
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -100px;
+   
+    
+}
+.code{
+    width: 165px;
+    height:250px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    background: url(../img/r_dj.png) no-repeat;
+    margin-top: -125px;
+    padding-top: 145px;
+    z-index: 1px;
+    /* text-align: right; */
+}
+.cat{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 146px;
+    right: 0px;
+}

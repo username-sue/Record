@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <form class="container">
+        <h1>用户注册</h1>
+        <div class="form-item">
+            <input type="text" placeholder="请输入11手机号" class="txt">      
+         </div>
+
+         <div class="form-item clearfix inspect" >
+            <input type="text" placeholder="请填写验证码"  class="txt fl">
+            <button type="button" class="fr">发送验证码</button>
+         </div>
+
+         <div class="form-item">
+            <input type="text" placeholder="请输入密码"  class="txt">      
+         </div>
+
+         <div class="form-item">
+            <input type="text" placeholder="请再次确认密码"  class="txt">      
+         </div>
+
+         <div class="form-item">
+            <select multiple="multiple"  class="txt">
+                <option>爱好1</option>
+                <option selected>爱好2</option>
+                <option>爱好3</option>
+                <option>爱好4</option>
+                <option selected>爱好5</option>
+                <option>爱好6</option>
+                <option selected>爱好7</option>
+                <option>爱好8</option>
+            </select>
+         </div>
+
+         <div class="form-item">
+            <span>性别</span>
+            <!-- 注：这里用label标签，作用于把文字和单选框关联在一起，点击文字时可以选择 -->
+             <label >
+                <input type="radio" name="sex" checked >
+                <span>男</span>
+             </label>
+                <label>
+                    <input type="radio" name="sex" >
+                    <span>女</span>
+                </label>
+         </div>
+
+        <div class="form-item">
+            <textarea  placeholder="请填写个人简介"  class="txt"></textarea>
+        </div>
+
+        <div class="form-item">
+            <label >
+                <input type="checkbox" name="" id="" class="bored" >
+                <span>同意台湾是中国不可分割的领土</span>
+            </label>
+        </div>
+
+        <div class="form-item">
+            <button >立即注册</button>
+            <!-- 注：这里使用reset，译为把form表单里面的所有标签都设为初始状态 -->
+            <button type="reset">重置表单</button>
+        </div>
+    </form>
+</body>
+</html>
