@@ -335,7 +335,6 @@
 }
 .middle-puw ul li img{
     width: 40px;
-    /* aspect-ratio: auto 40 / 40; */
     height: 40px;
 }
 .middle-puw ul a{
@@ -682,6 +681,4 @@
 .fixed-eject:hover .fixed-app{
     display: block;
 }
-
-
 /* 固定菜单 结束 */
