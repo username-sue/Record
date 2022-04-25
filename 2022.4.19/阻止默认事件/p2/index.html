@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>只能输入数字</title>
+    <style>
+      input {
+        border: none;
+        outline: none;
+        border: 1px solid #ccc;
+        height: 40px;
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 5px;
+        padding: 0 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="请输入商品价格" />
+
+    <script>
+      // 上面的文本框只能输入数字
+        var input = document.querySelector('input');
+        input.addEventListener('keydown',function(e){
+          var arr = ['1','2','3','4','5','6','7','8','9','0'];
+            if(!arr.includes(e.key)){
+              e.preventDefault();
+            }
+        })
+
+      // 第一步选中要操作的dom元素，
+      //第二步，给文本框绑定键盘事件，
+      //第三步，定义一个数组。里面传1-9-0的字符串数字，
+      //第四步，判断数组里面是否包含事件对象的按键；
+      //如果不包含就直接阻止默认事件。
+
+
+
+    </script>
+  </body>
+</html>
