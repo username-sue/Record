@@ -1,0 +1,26 @@
+*{
+    padding : 0;
+    margin : 0;
+    box-sizing :border-box;
+}
+.continer{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.h2{
+    background-color: lightskyblue;
+    height: 30px;
+    line-height: 30px;
+}
+
+.continer-item{
+    list-style: none;
+    background-color: lightblue;
+    margin-bottom: 30px;
+    height: 0;
+    overflow: hidden;
+}
