@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.pager{
+    text-align: center;
+}
+.pager a{
+    display: inline-block;
+    color: #4e6ef2;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 12px;
+    margin: 8px;
+    border: 1px  solid #e1e2e3;
+    cursor: pointer;
+    /* 禁止用户选择 */
+    user-select: none; 
+}
+.pager a.active{
+    color: #f40;
+    border: none;
+    cursor: auto;
+}
+.pager a.disabled{
+    color: #ccc;
+    /* 鼠标移到元素上有禁止提示符号 */
+    cursor: not-allowed;
+}
