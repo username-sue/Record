@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 1px solid rgb(207, 188, 188);
+    /* 以下3行代码表示一个弹性盒子，这里设置表示让里面的内容水平居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 230, 183);
+}
+.checkerboard{
+    width: 92%;
+    height: 92%;
+    /* 设置表格的行列之间没有间隙 */
+    border-collapse: collapse;
+}
+.checkerboard  td{
+    border: 1px solid black;
+    position: relative;
+}
+
+/* 棋子的样式 */
+.chess{
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    width: 90%;
+    height: 90%;
+    color: lightgray;
+    font-size: 12px;
+    font-weight: bold;
+    /* 让文字居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 白棋 */
+.white{
+    background-color: #fff;
+}
+/* 黑棋 */
+.black{
+    background-color: black;
+}
+.win{
+    border: 1px solid red;
+    /* 此属性是c3属性，最用为添加阴影 */
+    box-shadow:0 0 3px 2px red ;
+}
