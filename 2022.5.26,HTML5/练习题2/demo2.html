@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form {
+        width: 200px;
+        margin: 0 auto;
+      }
+      .item {
+        margin: 1em 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <div class="item">
+        <label>姓名</label>
+        <input id= "tex"  type="text" />
+      </div>
+      <div class="item">
+        <label>年龄</label>
+        <input id= "age" type="number" />
+      </div>
+      <div class="item">
+        <label>性别</label>
+        <label>
+          <input id= "sex" checked name="sex" type="radio" />
+          男
+        </label>
+        <label>
+          <input id= "female" name="sex" type="radio" />
+          女
+        </label>
+      </div>
+    </div>
+    <script>
+      // 填写表单时，保存数据到本地
+      var input = document.querySelectorAll('input');
+      for (var i = 0; i < input.length; i++) {
+        input[i].oninput = getDateOnclick;
+      }
+
+
+      var tex = document.querySelector('#tex');
+      var age = document.querySelector('#age');
+      var sex = document.querySelector('#sex');
+      var female = document.querySelector('#female');
+      //将表单信息放到本地存储
+      function getDateOnclick() {
+      var obj = {
+        name : tex.value,
+        age : age.value,
+        sex : sex.checked ? '男':'女',
+      }
+      //将对象转换为字符串存储
+      var str = JSON.stringify(obj);
+      localStorage.setItem('form',str);
+
+      }
+    
+      // 打开页面时，从本地加载数据到表单
+      function init() {
+       var json = localStorage.getItem('form');
+       if(!json){
+         return;
+       }
+       var obj = JSON.parse(json);
+       tex.value = obj.name;
+       age.value = obj.age;
+      if(obj.sex === '男'){
+        sex.checked = true;
+      }else{
+        female.checked = true;
+      }
+
+      }
+      init();
+    </script>
+  </body>
+</html>
