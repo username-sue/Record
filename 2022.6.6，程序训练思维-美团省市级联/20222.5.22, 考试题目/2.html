@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var files = [{
+                'name': 'xxx.png',
+                'size': 2000,
+        }]
+        function getImgFiles(files) {
+            var newArr = [];
+            var fileType = ['gif', 'bmp', 'webp', 'png', 'jpg', 'jpeg'];
+            for(var i = 0; i < files.length; i++){
+                var str = files[i].name.split('.')[1];
+                if (fileType.includes(str)) {
+                    newArr.push(files[i]);
+                    // console.log(newArr);
+                }
+            }
+            return newArr;
+            
+        }
+       console.log(getImgFiles(files));
+       
+    </script>
+</body>
+</html>

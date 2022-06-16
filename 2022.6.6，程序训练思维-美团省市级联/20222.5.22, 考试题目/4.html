@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跟随鼠标移动的点</title>
+    <style>
+        .dot{
+            width:100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="dot"></div>
+    <script>
+        var div = document.querySelector('.dot');
+        div.onmousemove = function(e){
+            //获取鼠标移动时的坐标；
+            var X = e.clientX,
+                Y = e.clientY;
+            //元素坐标；
+            var dom = div.getBoundingClientRect();
+            var ex = dom.left,
+                ey = dom.top;
+
+
+            //当鼠标移动时获取可视区宽高和元素宽高
+            var w = document.documentElement.clientWidth,
+                h = document.documentElement.clientHeight;
+            //元素宽高
+            var we = div.offsetWidth,
+                he = div.offsetHeight;
+
+            //算出left,top的最大值
+            //将算出的值在鼠标移动元素事件里面进行判断，控制可视区
+            var maxX = w - we,
+                maxY = h - he;
+                
+            window.onmousemove = function(e){
+                //获取当按下时鼠标移动的坐标和元素移动的坐标
+                var divX = e.clientX - X,
+                    divY = e.clientY - Y;
+                //元素移动的距离 加上，元素本身的坐标
+                var left = divX + ex;
+                var top = divY + ey;
+
+
+                //由于不能超出可视区，所以这里要设置left和top的最大最小值，进行控制
+                //最小值
+                if(left < 0){
+                    left = 0;
+                }
+                if(left > maxX){
+                    left = maxX;
+                }
+                if(top < 0){
+                    top = 0;
+                }
+                if(top > maxY){
+                    top = maxY;
+                }
+
+                //把获取到的坐标赋给要移动元素，
+                div.style.left = left + 'px';
+                div.style.top = top + 'px';
+
+            }
+        }
+    </script>
+</body>
+</html>
