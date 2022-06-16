@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul></ul>
+    <script>
+        const arr = [
+            {c:{a: 1 }, d:{a: 2 }},
+            {a: 1 },
+            {a: 1 },
+            {c:{a: 1 }},
+            {c:{a: 1 }, d:{a: 2 }},
+        ]
+        // console.log(arr[0]==arr[4])
+        const arr1 = [
+        {c:{a: 1 }, d:{a: 2 }},
+        {a: 2 },
+        {c:{a: 1 }},
+        ]
+
+        // const set = new Set(...arr);
+        // const newArry = [...set];
+        console.log(Object.keys(arr[0]), Object.values(arr[0]));
+
+
+
+            var xhr = new XMLHttpRequest(); //创建发送请求的对象
+            xhr.onreadystatechange = function(){ //当请求状态发生改变时运行的函数
+                // xhr.readyState： 一个数字，用于判断请求到了哪个阶段
+                // 0: 刚刚创建好了请求对象，但还未配置请求（未调用open方法）
+                // 1: open方法已被调用
+                // 2: send方法已被调用
+                // 3: 正在接收服务器的响应消息体
+                // 4: 服务器响应的所有内容均已接收完毕
+                // console.log(xhr.readyState);
+                if(xhr.readyState === 4) {
+                    // console.log(xhr.responseText);
+                    const obj = JSON.parse(xhr.responseText);//拿到json格式的数据
+                    const data = obj.data; //拿到解析出来的资源对象里面的数组
+                    const ul = document.querySelector('ul')
+                    // console.log(data);
+                    const hourse = data.map((hour) =>`<li>${hour.cname}</li>`).join('');
+                    ul.innerHTML = hourse
+
+                }
+                
+                // xhr.responseText： 获取服务器响应的消息体文本
+
+                // xhr.getResponseHeader("Content-Type") 获取响应头Content-Type
+            }
+            xhr.open("GET", "https://study.duyiedu.com/api/herolist"); //配置请求
+            // xhr.setRequestHeader("Content-Type", "application/json"); //设置请求头
+            xhr.send("null"); //构建请求体，发送到服务器，如果没有请求体，传递null
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul></ul>
+    <script>
+        // //注fetch API默认方法是get请求
+        // const resp = fetch("https://study.duyiedu.com/api/herolist").then((resp)=>{//resp 已全部接收到服务器的响应头
+        //     return resp.json();//继续接收json格式的响应体
+        // }).then((resp)=>{//已经到响应体资源
+        //     // console.log(resp);
+        //     const data = resp.data;
+        //     const ul = document.querySelector('ul')
+        //     const hourse = data.map((hour) =>`<li>${hour.cname}</li>`).join('');
+        //     ul.innerHTML = hourse
+
+        // })
+
+        //封装函数
+        (async function(){
+            async function getHeroes() {
+            const resp = fetch("https://study.duyiedu.com/api/herolist")
+            .then((resp) =>resp.json()) //继续等待拿到json格式的响应体
+            .then((resp) =>resp.data);//已经拿到json格式的数据.data里面的数组数据；
+            return resp;
+        }
+
+        const hourse = await getHeroes();
+        console.log(hourse);//调用测试已成功拿到数据
+        })()
+      
+    </script>
+</body>
+</html>
