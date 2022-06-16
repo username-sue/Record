@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐歌词滚动效果</title>
+    <style>
+        body{
+            background-color: #000;
+            text-align: center;
+            color: #ccc;
+        }
+        audio{
+            width: 500px;
+            margin-bottom: 50px;
+        }
+        .container{
+            height: 430px;
+            overflow: hidden;
+        }
+        .music{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            transition: .5s;
+         
+        }
+        .music li{
+            height: 30px;
+            line-height: 30px;
+            transition: .2s;
+        }
+        .music li.active {
+            color: #fff;
+            transform: scale(1.3);
+
+        }
+
+    </style>
+</head>
+<body>
+    <audio src="./音乐歌词滚动-素材/music.mp3" controls></audio>
+    <div class="container">
+        <ul class="music">
+            <!-- <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li class="active">lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li>
+            <li>lohnujmhhbngggbdjnabbahb</li> -->
+        </ul>
+    </div>
+    <script src="./音乐歌词滚动-素材/index.js"></script>
+</body>
+</html>
